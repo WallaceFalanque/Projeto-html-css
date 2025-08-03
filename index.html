@@ -6,7 +6,7 @@
     <title>Procedimentos - Clínica Estética</title>
 
     <style>
-        /* Reset básico para remover margens e paddings padrão do navegador */
+       
         * {
             margin: 0;
             padding: 0;
@@ -20,76 +20,76 @@
         }
 
         header {
-            background-color: #ffffff; /* Fundo do cabeçalho */
+            background-color: #ffffff; 
             padding: 20px;
             text-align: center;
             display: flex;
-            align-items: center; /* Alinha os itens verticalmente ao centro */
-            justify-content: center; /* Centraliza o conteúdo horizontalmente */
+            align-items: center; 
+            justify-content: center; 
         }
 
         .header-content {
-            display: flex; /* Permite que o logo e o título fiquem lado a lado */
-            align-items: center; /* Alinha o logo e o título verticalmente */
+            display: flex; 
+            align-items: center; 
         }
 
         .header-logo {
-            height: 80px; /* Altura do logo - ajuste conforme necessário */
-            width: auto; /* Mantém a proporção da imagem */
-            margin-right: 20px; /* Espaçamento entre o logo e o título */
+            height: 80px; 
+            width: auto; 
+            margin-right: 20px; 
         }
 
         header h1 {
             font-size: 2.5rem;
-            color: #e91e63; /* Cor do título principal */
+            color: #e91e63; 
         }
 
-        /* Estilos para o Carrossel de Procedimentos */
+        
         .carrossel {
             width: 100%;
-            overflow: hidden; /* Esconde o que sai dos limites do carrossel */
+            overflow: hidden; 
             background-color: #f9f9f9;
             padding: 30px 0;
             position: relative;
         }
 
         .carrossel-track {
-            display: flex; /* Permite que os cards fiquem um ao lado do outro */
-            width: max-content; /* Permite que a largura seja determinada pelo conteúdo */
-            animation: deslizar 45s linear infinite; /* Animação de deslizamento. Tempo ajustado para mais cards. */
-            /* A duplicação dos cards no HTML é crucial para um loop contínuo e suave com esta animação */
+            display: flex; 
+            width: max-content; 
+            animation: deslizar 45s linear infinite; 
+           
         }
 
         .card {
-            width: 240px; /* Largura de cada card */
-            height: 360px; /* Altura de cada card */
-            margin: 0 10px; /* Espaçamento entre os cards */
-            border-radius: 10px; /* Cantos arredondados */
-            overflow: hidden; /* Garante que a imagem e texto fiquem dentro do card */
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Sombra para um efeito 3D sutil */
+            width: 240px; 
+            height: 360px; 
+            margin: 0 10px; 
+            border-radius: 10px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15); 
             position: relative;
-            flex-shrink: 0; /* Impede que os cards encolham */
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para efeitos de hover */
+            flex-shrink: 0; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
         }
 
-        /* Efeito de hover para os cards */
+        
         .card:hover {
-            transform: translateY(-5px); /* Leve levantamento ao passar o mouse */
-            box-shadow: 0 8px 16px rgba(0,0,0,0.25); /* Sombra mais intensa */
-            cursor: pointer; /* Indica que o item é interativo */
+            transform: translateY(-5px); 
+            box-shadow: 0 8px 16px rgba(0,0,0,0.25); 
+            cursor: pointer; 
         }
 
         .card img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Garante que a imagem cubra o card sem distorção */
+            object-fit: cover; 
         }
 
         .card .texto {
             position: absolute;
-            bottom: 0; /* Posiciona a caixa de texto na parte inferior do card */
-            background: #e91e63; /* Cor de fundo da caixa de texto do card */
-            color: white; /* Cor do texto dentro da caixa */
+            bottom: 0; 
+            background: #e91e63; 
+            color: white; 
             width: 100%;
             padding: 15px 10px;
             text-align: center;
@@ -105,19 +105,16 @@
             font-size: 0.85rem;
         }
 
-        /* Animação para o carrossel */
+        
         @keyframes deslizar {
             0% { transform: translateX(0); }
-            /* 100% { transform: translateX(-50%); } */
-            /* O -50% funciona quando a largura total do carrossel-track é o dobro da largura
-               do conjunto original de cards. Se o número de cards for diferente,
-               a porcentagem pode precisar ser ajustada para um loop perfeito.*/
-            100% { transform: translateX(-50%); } /* Mantido -50% conforme seu código original para a duplicação */
+            
+            100% { transform: translateX(-50%); } 
         }
 
-        /* Estilos para o Rodapé */
+       
         footer {
-            background-color: #e91e63; /* Cor de fundo do rodapé */
+            background-color: #e91e63; 
             color: white;
             text-align: center;
             padding: 20px;
@@ -263,3 +260,4 @@
 
 </body>
 </html>
+
